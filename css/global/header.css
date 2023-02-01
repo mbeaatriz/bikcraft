@@ -1,5 +1,5 @@
 .header-bg {
-  background: #000000;
+  background: var(--cor-12);
 }
 
 .header {
@@ -25,8 +25,6 @@
 }
 
 .header-menu a {
-  color: #fff;
-  font-size: 18px;
   padding: 20px 0px;
   position: relative;
 }
@@ -36,7 +34,7 @@
   display: block;
   height: 2px;
   width: 0px;
-  background: #fff;
+  background: var(--cor-0);
   margin-top: 4px;
   position: absolute;
   transition: 0.3s;
@@ -71,15 +69,15 @@
 
   .header-menu a {
     display: inline-block;
-    background: #111111;
+    background: var(--cor-10);
     padding: 12px 20px;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 400px) {
   .header-menu a {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
