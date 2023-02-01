@@ -9,7 +9,6 @@
 }
 
 .header img {
-  padding-left: 20px;
   padding-bottom: 36px;
   padding-top: 36px;
 }
@@ -18,10 +17,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-}
-
-.header-menu:last-child {
-  padding-right: 20px;
 }
 
 .header-menu a {
