@@ -29,7 +29,7 @@
   position: relative;
 }
 
-.header-menu a:after {
+.header-menu a::after {
   content: "";
   display: block;
   height: 2px;
@@ -40,7 +40,7 @@
   transition: 0.3s;
 }
 
-.header a:hover:after {
+.header a:hover::after {
   width: 100%;
 }
 
@@ -50,7 +50,7 @@
   }
 
   .header img {
-    padding: 20px;
+    padding-bottom: 20px;
   }
 
   .header a:after {
@@ -59,7 +59,7 @@
 
   .header-menu {
     gap: 12px;
-    padding-bottom: 20px;
+    padding-bottom: 36px;
     justify-content: center;
   }
 
@@ -69,15 +69,9 @@
 
   .header-menu a {
     display: inline-block;
-    background: var(--cor-10);
+    background: var(--cor-11);
     padding: 12px 20px;
     border-radius: 4px;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .header-menu a {
     font-size: 0.75rem;
   }
 }

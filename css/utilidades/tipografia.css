@@ -48,16 +48,16 @@
   .font-2-l-b {
     font-size: 1.125rem;
   }
+  .font-1-xl {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 800px) {
   .font-1-xxl {
     font-size: 2rem;
   }
-}
-
-@media (max-width: 600px) {
-  .font-1-xxl {
-    font-size: 1rem;
+  .font-1-xl {
+    font-size: 1.125rem;
   }
 }
