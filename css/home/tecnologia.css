@@ -66,7 +66,7 @@
 
 @media (max-width: 1200px) {
   .tecnologia {
-    gap: 36px;
+    gap: 40px;
   }
 
   .tecnologia-conteudo {
@@ -105,6 +105,7 @@
 @media (max-width: 600px) {
   .tecnologia-vantagens {
     flex-direction: column;
+    gap: 20px;
   }
   .tecnologia-vantagens img {
     width: 24px;
