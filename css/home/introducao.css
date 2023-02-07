@@ -33,9 +33,6 @@
   .introducao-bg {
     padding-top: 40px;
   }
-  .introducao {
-    gap: 40px;
-  }
 
   .introducao-conteudo {
     padding-bottom: 120px;
@@ -47,10 +44,16 @@
 }
 
 @media (max-width: 800px) {
+  .introducao {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
   .introducao-bg {
+    padding-top: 32px;
     background: var(--cor-11);
   }
-
   .introducao {
     grid-template-columns: 1fr;
   }
@@ -66,11 +69,5 @@
   .introducao-img img {
     height: 300px;
     width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .introducao-bg {
-    padding-top: 32px;
   }
 }

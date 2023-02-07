@@ -36,6 +36,14 @@
   position: absolute;
 }
 
+.tecnologia-conteudo a:hover {
+  color: var(--cor-0);
+}
+
+.tecnologia-conteudo a:hover::after {
+  background: var(--cor-0);
+}
+
 .tecnologia-introducao {
   margin-bottom: 84px;
 }

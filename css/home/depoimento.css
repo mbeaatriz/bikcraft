@@ -11,7 +11,7 @@
 
 .depoimento-conteudo p {
   max-width: 32ch;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   position: relative;
 }
 
