@@ -29,6 +29,9 @@
   font: 400 1rem/1.5 "Roboto", sans-serif;
 }
 .font-2-m {
+  font: 400 1.125rem/1.35 "Roboto", sans-serif;
+}
+.font-2-m-b {
   font: 500 1.125rem/1.35 "Roboto", sans-serif;
 }
 .font-2-l-b {
@@ -70,7 +73,8 @@
   .font-2-l-b {
     font-size: 1rem;
   }
-  .font-2-m {
+  .font-2-m,
+  .font-2-m-b {
     font-size: 0.875rem;
   }
 }

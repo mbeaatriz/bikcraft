@@ -76,6 +76,10 @@
   .seguros-conteudo {
     grid-template-columns: 1fr;
   }
+
+  .seguros-conteudo {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 600px) {
