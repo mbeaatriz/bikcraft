@@ -1,0 +1,27 @@
+.termos {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.termos ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.termos li {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.termos p {
+  max-width: 74ch;
+}
+
+@media (max-width: 1200px) {
+  .termos {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

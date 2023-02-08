@@ -18,6 +18,9 @@
   margin-bottom: 12px;
 }
 
+.footer a:hover {
+  color: var(--cor-0);
+}
 .footer-icons {
   display: flex;
   gap: 20px;

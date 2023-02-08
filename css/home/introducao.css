@@ -30,7 +30,7 @@
 }
 
 @media (max-width: 1200px) {
-  .introducao-bg {
+  .introducao-conteudo {
     padding-top: 40px;
   }
 
@@ -51,7 +51,7 @@
 
 @media (max-width: 600px) {
   .introducao-bg {
-    padding-top: 32px;
+    padding-top: 40px;
     background: var(--cor-11);
   }
   .introducao {
@@ -59,6 +59,7 @@
   }
 
   .introducao-conteudo {
+    padding-top: 0;
     padding-bottom: 0px;
   }
 
