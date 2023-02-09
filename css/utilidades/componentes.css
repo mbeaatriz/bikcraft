@@ -33,7 +33,7 @@
 }
 
 .botao:hover {
-  background: var(--cor-p3);
+  background: var(--cor-p2);
 }
 
 .botao.secundario {
@@ -43,6 +43,20 @@
 
 .botao.secundario:hover {
   background: var(--cor-9);
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 10px;
+  background: url("../../img/icones/seta.svg");
+  transition: 0.3s;
+}
+
+.botao.seta:hover:after {
+  margin-left: 16px;
 }
 
 @media (max-width: 600px) {

@@ -81,4 +81,9 @@
   .font-2-m-b {
     font-size: 0.875rem;
   }
+
+  .font-1-m,
+  .font-1-m-b {
+    font-size: 0.875rem;
+  }
 }
