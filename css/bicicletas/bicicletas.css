@@ -75,11 +75,6 @@
 }
 
 @media (max-width: 1200px) {
-  .bicicletas {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
   .bicicletas-conteudo {
     gap: 20px;
   }
@@ -87,8 +82,8 @@
 
 @media (max-width: 800px) {
   .bicicletas {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     gap: 40px;
   }
 
@@ -123,5 +118,12 @@
 
   .bicicletas-conteudo-itens h2::before {
     top: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicletas {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }

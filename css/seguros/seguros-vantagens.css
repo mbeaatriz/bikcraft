@@ -1,0 +1,15 @@
+.seguros-vantagens-bg {
+  background: var(--cor-12);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.seguros-vantagens h2 {
+  margin-bottom: 80px;
+}
+
+.seguros-vantagens ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 80px 40px;
+}
