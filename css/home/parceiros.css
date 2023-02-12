@@ -1,6 +1,6 @@
 .parceiros {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .parceiros h2 {
@@ -36,9 +36,10 @@
 
 @media (max-width: 1200px) {
   .parceiros {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
+
   .parceiros h2 {
     margin-bottom: 32px;
   }
@@ -51,6 +52,10 @@
 }
 
 @media (max-width: 600px) {
+  .parceiros {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .parceiros ul {
     grid-template-columns: repeat(2, 1fr);
   }

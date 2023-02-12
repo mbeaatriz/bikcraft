@@ -13,7 +13,8 @@ h2,
 h3,
 h4,
 p,
-blockquote {
+blockquote,
+dd {
   margin: 0px;
   padding: 0px;
 }

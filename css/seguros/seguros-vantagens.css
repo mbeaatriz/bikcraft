@@ -1,15 +1,47 @@
 .seguros-vantagens-bg {
   background: var(--cor-12);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .seguros-vantagens h2 {
-  margin-bottom: 80px;
+  margin-bottom: 32px;
 }
 
 .seguros-vantagens ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 80px 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px;
+}
+
+.seguros-vantagens li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.seguros-vantagens img {
+  width: 34px;
+}
+
+@media (max-width: 1200px) {
+  .seguros-vantagens-bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .seguros-vantagens-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .seguros-vantagens img {
+    width: 24px;
+  }
+
+  .seguros-vantagens ul {
+    gap: 20px;
+  }
 }

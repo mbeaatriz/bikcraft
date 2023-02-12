@@ -3,8 +3,8 @@
 }
 
 .seguros {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 #seguros .seguros {
@@ -71,29 +71,36 @@
 
 @media (max-width: 1200px) {
   .seguros {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-
-@media (max-width: 800px) {
-  .seguros-conteudo {
-    grid-template-columns: 1fr;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
-  .seguros-conteudo {
-    gap: 20px;
-  }
-}
+  @media (max-width: 800px) {
+    .seguros-conteudo {
+      grid-template-columns: 1fr;
+    }
 
-@media (max-width: 600px) {
-  .seguros-lista {
-    padding: 40px;
+    .seguros-conteudo {
+      gap: 20px;
+    }
   }
-  .seguros-lista li:last-child {
-    padding-bottom: 20px;
-  }
-  .seguros-lista li {
-    padding-bottom: 12px;
+
+  @media (max-width: 600px) {
+    .seguros {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .seguros-lista {
+      padding: 40px;
+    }
+
+    .seguros-lista li:last-child {
+      padding-bottom: 20px;
+    }
+
+    .seguros-lista li {
+      padding-bottom: 12px;
+    }
   }
 }

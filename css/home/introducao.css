@@ -29,23 +29,22 @@
   margin-bottom: 20px;
 }
 
+.introducao-conteudo a {
+  display: block;
+}
+
 @media (max-width: 1200px) {
   .introducao-conteudo {
-    padding-top: 40px;
+    padding-top: 0px;
   }
 
   .introducao-conteudo {
     padding-bottom: 120px;
+    padding-top: 60px;
   }
 
   .introducao-bg {
     box-shadow: inset 0 -60px var(--cor-0);
-  }
-}
-
-@media (max-width: 800px) {
-  .introducao {
-    gap: 20px;
   }
 }
 
@@ -54,13 +53,15 @@
     padding-top: 40px;
     background: var(--cor-11);
   }
+
   .introducao {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .introducao-conteudo {
     padding-top: 0;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .introducao-conteudo h1 {

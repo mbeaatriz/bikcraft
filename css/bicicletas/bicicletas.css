@@ -26,15 +26,20 @@
   position: relative;
 }
 
+.bicicletas-conteudo-itens h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .bicicletas-conteudo-itens h2::before {
   display: inline-block;
   content: "";
   background-color: var(--cor-p1);
   width: 12px;
   height: 8px;
-  position: absolute;
-  top: -20px;
 }
+
 .bicicletas-conteudo-itens h2,
 .bicicletas-conteudo-itens p {
   grid-column: 1/-1;
@@ -44,10 +49,12 @@
   grid-column: 2;
   align-self: end;
 }
+
 .bicicletas-conteudo-itens ul {
   display: grid;
   gap: 10px;
 }
+
 .bicicletas-conteudo-itens li {
   display: flex;
   gap: 16px;
@@ -60,7 +67,7 @@
 
 .bicicletas-conteudo-img img {
   object-fit: cover;
-  min-height: 350px;
+  min-height: 360px;
   height: 100%;
   border-radius: 5px;
 }
@@ -78,52 +85,46 @@
   .bicicletas-conteudo {
     gap: 20px;
   }
-}
-
-@media (max-width: 800px) {
   .bicicletas {
     padding-top: 60px;
     padding-bottom: 60px;
-    gap: 40px;
   }
 
-  .bicicletas-conteudo {
-    grid-template-columns: 1fr;
+  @media (max-width: 800px) {
+    .bicicletas-conteudo {
+      grid-template-columns: 1fr;
+    }
+
+    .bicicletas-conteudo-img img {
+      max-width: 100%;
+      min-height: 200px;
+      border-radius: 5px;
+    }
+
+    .bicicletas-bg {
+      background: var(--cor-11);
+    }
+
+    .bicicletas-conteudo-itens a {
+      grid-column: 1;
+      align-self: start;
+    }
   }
 
-  .bicicletas-conteudo-img img {
-    max-width: 100%;
-    min-height: 200px;
-    border-radius: 5px;
-  }
+  @media (max-width: 600px) {
+    .bicicletas {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      gap: 40px;
+    }
 
-  .bicicletas-bg {
-    background: var(--cor-11);
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+    .bicicletas-bg {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
 
-  .bicicletas-conteudo-itens a {
-    grid-column: 1;
-    align-self: start;
-  }
-
-  .bicicletas-conteudo-itens ul {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .bicicletas-conteudo-itens h2 {
-    padding-top: 20px;
-  }
-
-  .bicicletas-conteudo-itens h2::before {
-    top: 0px;
-  }
-}
-
-@media (max-width: 600px) {
-  .bicicletas {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    .bicicletas-conteudo-itens img {
+      width: 24px;
+    }
   }
 }
