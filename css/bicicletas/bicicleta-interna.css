@@ -1,0 +1,123 @@
+.bicicleta-interna {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  align-items: start;
+}
+
+.bicicleta-interna h2 {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.bicicleta-interna-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bicicleta-interna-imgs img {
+  border-radius: 5px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.bicicleta-interna-imgs img:first-child {
+  min-width: 100%;
+}
+
+.bicicleta-interna-conteudo > p {
+  margin-bottom: 32px;
+}
+
+.bicicleta-interna-botao {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: center;
+  justify-items: start;
+}
+
+.bicicleta-interna-botao a {
+  width: max-content;
+}
+
+.bicicleta-interna-botao > div {
+  display: grid;
+  gap: 8px;
+}
+
+.botao-item {
+  display: flex;
+  gap: 4px;
+  background: var(--cor-12);
+  align-items: start;
+  width: max-content;
+  padding: 4px;
+}
+
+.bicicleta-interna-lista {
+  padding: 32px;
+  background: var(--cor-12);
+  border-radius: 5px;
+}
+
+.bicicleta-interna-informacoes {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.bicicleta-interna-informacoes ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+.bicicleta-interna-ficha li p {
+  font-weight: 600;
+}
+
+.bicicleta-interna-ficha li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  border-bottom: solid 1px var(--cor-10);
+}
+
+.bicicleta-interna-ficha li:last-child {
+  border-bottom: initial;
+  margin-bottom: initial;
+}
+
+@media (max-width: 800px) {
+  .bicicleta-interna {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+  }
+
+  .bicicleta-interna-imgs {
+    grid-row: 2;
+  }
+
+  .bicicleta-interna-conteudo > p {
+    margin-bottom: 20px;
+  }
+
+  .bicicleta-interna-informacoes img {
+    width: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicleta-interna-informacoes ul {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .bicicleta-interna-botao {
+    grid-template-columns: 1fr;
+  }
+}
