@@ -1,0 +1,77 @@
+#contato {
+  background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.contato-informacoes,
+.contato-formulario {
+  padding: 60px;
+  box-sizing: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contato-informacoes {
+  display: grid;
+  gap: 32px;
+  background: var(--cor-12);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.contato-formulario {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.contato-informacoes > div {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+
+.contato-informacoes > div:last-child {
+  position: initial;
+  gap: 20px;
+}
+
+.contato-informacoes a {
+  display: block;
+}
+
+.contato-informacoes a:hover {
+  color: var(--cor-0);
+}
+
+.contato-formulario {
+  background: var(--cor-0);
+}
+
+@media (max-width: 800px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-informacoes {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .contato-formulario {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato-informacoes,
+  .contato-formulario {
+    padding: 40px;
+  }
+
+  .contato-informacoes {
+    gap: 20px;
+  }
+}

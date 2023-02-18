@@ -30,6 +30,8 @@
   text-transform: uppercase;
   letter-spacing: 0.015em;
   max-width: fit-content;
+  cursor: pointer;
+  border: none;
 }
 
 .botao:hover {
