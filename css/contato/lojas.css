@@ -1,0 +1,69 @@
+.lojas {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.lojas h2 {
+  margin-bottom: 32px;
+}
+
+.lojas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.lojas-cidade {
+  display: grid;
+}
+
+.lojas-informacoes {
+  display: grid;
+  gap: 32px;
+  background: var(--cor-0);
+  padding: 32px 60px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.lojas-informacoes h3 {
+  position: relative;
+}
+
+.lojas-informacoes h3::before {
+  display: inline-block;
+  content: "";
+  height: 8px;
+  width: 12px;
+  background: var(--cor-p1);
+  position: absolute;
+  top: 16px;
+  left: -24px;
+}
+
+.lojas-informacoes span {
+  position: relative;
+}
+
+.lojas-informacoes span::before {
+  display: inline-block;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-image: url("../../img/icones/horario.svg");
+  position: absolute;
+  left: -26px;
+  top: 1px;
+}
+
+.lojas-informacoes-conteudo {
+  display: flex;
+  gap: 40px;
+}
+
+.lojas-informacoes-conteudo div {
+  border-left: solid 2px var(--cor-2);
+}
+
+.lojas-informacoes-conteudo p {
+  padding-left: 12px;
+}
