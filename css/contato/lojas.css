@@ -15,6 +15,7 @@
 
 .lojas-cidade {
   display: grid;
+  box-shadow: 0px 1px 2px 0px #0000001a;
 }
 
 .lojas-informacoes {
@@ -66,4 +67,56 @@
 
 .lojas-informacoes-conteudo p {
   padding-left: 12px;
+}
+
+@media (max-width: 1200px) {
+  .lojas {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .lojas-informacoes-conteudo {
+    gap: 20px;
+  }
+
+  .lojas-informacoes h3::before {
+    top: 10px;
+    left: -24px;
+  }
+
+  .lojas-informacoes {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .lojas-conteudo {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .lojas-informacoes {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .lojas {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .lojas-informacoes {
+    gap: 20px;
+  }
+
+  .lojas-informacoes span::before {
+    top: -2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .lojas-informacoes-conteudo {
+    flex-direction: column;
+  }
 }
