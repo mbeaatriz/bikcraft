@@ -16,13 +16,25 @@
   border-radius: 5px;
 }
 
-.seguros-perguntas dt {
+.seguros-perguntas button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 8px;
   align-items: center;
   margin-bottom: 16px;
   cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.seguros-perguntas dd {
+  display: none;
+}
+
+.seguros-perguntas dd.ativa {
+  display: block;
 }
 
 .seguros-perguntas dd {
@@ -30,7 +42,7 @@
   max-width: 74ch;
 }
 
-.seguros-perguntas dt::before {
+.seguros-perguntas button::before {
   display: inline-block;
   content: "";
   width: 12px;
@@ -38,7 +50,7 @@
   background: var(--cor-p1);
 }
 
-.seguros-perguntas dt::after {
+.seguros-perguntas button::after {
   display: inline-block;
   content: "";
   width: 14px;
@@ -47,7 +59,8 @@
   transition: 0.3s;
 }
 
-.seguros-perguntas dt:hover:after {
+.seguros-perguntas button:hover::after,
+.seguros-perguntas button[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 
